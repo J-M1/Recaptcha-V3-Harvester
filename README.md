@@ -1,5 +1,5 @@
 # Captcha-Solver
-This is a Recaptcha V3 Harvester you can use for any site, just replace the sitekey and website you wish to use.
+This is a Recaptcha V3 Harvester you can use for any site, just replace the sitekey in captcha.html and website you wish to use in main.js.
 This solver automatically removes expired captcha tokens after they expire (120 seconds).
 
 # Using the tokens
