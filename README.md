@@ -9,23 +9,17 @@ Retrieving a token will automatically remove it from the bank.
 
 ```js
 request('http://localhost:8080/fetch', function (error, response, body) {
-            if(body != undefined)
-            {
+            if(body != undefined) {
                 var tokenPot = JSON.parse(body)
-                if(body == "[]")
-                {
+                if(body == "[]") {
                     console.log("Waiting for captcha...")
                     setTimeout(functionName, 500);
-                }
-                else
-                {
+                } else {
                     console.log("Got captcha token...")
                     captchaToken = tokenPot[0]["token"]
                     return captchaToken;
                 }
-            }
-            else if(body == undefined)
-            {
+            } else if(body == undefined) {
                 console.log("Captcha bank not active.")
             }
         });
