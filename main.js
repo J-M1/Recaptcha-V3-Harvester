@@ -28,7 +28,8 @@ async function initCaptchaWindow() {
 
 	SetupIntercept();
 
-	captchaWindow.loadURL('https://accounts.google.com');
+	//User agents chrome allows sign in on electron, due to chrome's new rules. DO NOT use this when connecting to your site.
+	captchaWindow.loadURL('https://accounts.google.com', {userAgent: 'Chrome'});
 	
 	await sleep(1000)
 	
