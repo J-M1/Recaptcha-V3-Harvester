@@ -32,7 +32,8 @@ request('http://localhost:8080/fetch', function (error, response, body) {
 ```
 
 # Instructions
-Clone this repo, then:
+Clone this repo and:
+
 ```npm install``` 
 then
 ``` npm start```
