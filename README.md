@@ -1,4 +1,4 @@
-# Captcha-Solver
+## Recaptcha V3 Harvester
 This is a Recaptcha V3 Harvester you can use for any site, just replace the sitekey in captcha.html and website you wish to use in main.js.
 This solver automatically removes expired captcha tokens after they expire (120 seconds).
 
@@ -37,3 +37,4 @@ Clone this repo and:
 ```npm install``` 
 then
 ``` npm start```
+
