@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Supply Harvester</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+	<div>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LfucpUUAAAAAC1oYq1gsmm2MXk8TjrH_mkcLeL8"></script>
+		<script>
+		grecaptcha.ready(function () {
+		  grecaptcha.execute('6LfucpUUAAAAAC1oYq1gsmm2MXk8TjrH_mkcLeL8')
+		  .then(function (token) {
+			// Verify the token on the server.
+			document.getElementById("g-recaptcha-response").value = token;
+			sub(token)
+		  });
+		});
+		</script>
+		<input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" value="">
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		const remote = require('electron').remote
+  		const app = remote.app
+  		const ipcRenderer = require('electron').ipcRenderer
+		function sub(token) {
+			ipcRenderer.send('sendCaptcha', token);
+			//Location reload reloads captcha, the number is the refresh rate.
+			setTimeout(function	()	{ 
+				location.reload();
+			}, 5000);
+		}
+	</script>
+</body>
+</html>
