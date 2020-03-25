@@ -35,7 +35,7 @@ followed by:
 ``` npm start```
 
 ## Credit
-This is a modified V2 harvester made by [ItsFuego](https://github.com/ItsFuego). His harvester can be found [here](https://github.com/ItsFuego/Captcha-Solver).
+This was originally [ItsFuego's](https://github.com/ItsFuego) V2 harvester, but I modified it to use V3 instead. His harvester can be found [here](https://github.com/ItsFuego/Captcha-Solver).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
