@@ -32,9 +32,13 @@ request('http://localhost:8080/fetch', function (error, response, body) {
 ```
 
 ## Instructions
-Clone this repo and:
+Clone or download this repository, and then:
 
 ```npm install``` 
-then
+
+followed by:
+
 ``` npm start```
 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
