@@ -15,7 +15,7 @@ request('http://localhost:8080/fetch', function (error, response, body) {
                 if(body == "[]")
                 {
                     console.log("Waiting for captcha...")
-                    setTimeout(getCaptchaToken, 500, sizeID);
+                    setTimeout(functionName, 500);
                 }
                 else
                 {
