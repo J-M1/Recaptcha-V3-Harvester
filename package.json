@@ -9,7 +9,7 @@
   "author": "J-M1",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.0"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
